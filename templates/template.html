@@ -19,34 +19,6 @@
 
 <body>
 
-  <!-- Navigation -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-
   <!-- Page Content -->
   <div class="container">
 
@@ -65,56 +37,20 @@
 
     <!-- Content Row -->
     <div class="row">
-    {% for link in link1[:3] %}
+    {% for i in [0,1,2] %}
       <div class="col-md-4 mb-5">
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title">Result</h2>
-            <img class="img-fluid rounded mb-4 mb-lg-0" src="{{link}}" alt="">
+            <img class="img-fluid rounded mb-4 mb-lg-0" src="{{link1[i]}}" alt="">
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
+            <a href="{{link2[i]}}" class="btn btn-primary btn-sm">More Info</a>
           </div>
         </div>
       </div>
     {% endfor %}
     </div>
-
-    <div class="row">
-    {% for link in link1[3:6] %}
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">Result</h2>
-            <img class="img-fluid rounded mb-4 mb-lg-0" src="{{link}}" alt="">
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-    </div>
-
-    <div class="row">
-    {% for link in link1[6:9] %}
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">Result</h2>
-            <img class="img-fluid rounded mb-4 mb-lg-0" src="{{link}}" alt="">
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-    </div>
-
-
-
-    <!-- /.row -->
 
 
   </div>
